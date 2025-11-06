@@ -1,0 +1,37 @@
+version: '3.8'
+services:
+  exercises:
+    build: .
+    volumes:
+      - ./exercises:/app/exercises
+      - ./attendance_id:/app/sync/attendance_id
+  sync:
+    image: "ghcr.io/skiller-whale/learnersync:0.2.4"
+    network_mode: "host"
+    environment:
+      SERVER_URL: https://train.skillerwhale.com
+      SW_RUNNING_IN_HOSTED_ENV:
+      WATCHER_BASE_PATH: "/app"
+      ATTENDANCE_ID_FILE: "/app/sync/attendance_id"
+      WATCHED_EXTS: ".py .yaml .json .css .html .md .chat"
+      IGNORE_MATCH: ".git"
+    volumes:
+      - ./exercises:/app/exercises
+      - ./.chat_history:/app/chat_history
+      - ./attendance_id:/app/sync/attendance_id
+    tty: true
+    stdin_open: true
+  chat_client:
+    image: "ghcr.io/skiller-whale/bedrock-chat-client:v0.1.5"
+    volumes:
+      - ./exercises/logging:/app/logging
+    ports:
+      - 1001:3000
+    environment:
+      ATTENDANCE_ID: "${SW_ATTENDANCE_ID}"
+      NEXT_TELEMETRY_DISABLED: 1
+  continue_session_sync_filter:
+    image: "ghcr.io/skiller-whale/continue-session-sync-filter:0.0.2"
+    volumes:
+      - /home/learner/.continue/sessions:/sessions_raw
+      - /home/learner/genai/.chat_history:/sessions_filtered
