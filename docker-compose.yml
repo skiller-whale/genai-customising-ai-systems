@@ -34,4 +34,4 @@ services:
     image: "ghcr.io/skiller-whale/continue-session-sync-filter:0.0.2"
     volumes:
       - /home/learner/.continue/sessions:/sessions_raw
-      - /home/learner/genai/.chat_history:/sessions_filtered
+      - /home/learner/genai-customising-ai-systems/.chat_history:/sessions_filtered

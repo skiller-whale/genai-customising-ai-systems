@@ -1,0 +1,9 @@
+name: Customer Data MCP server
+version: 0.0.1
+schema: v1
+mcpServers:
+  - name: Customer Data MCP server
+    command: python3
+    args:
+      - /home/learner/genai-customising-ai-systems/exercises/mcp/customer_mcp_server.py
+    env: {}
