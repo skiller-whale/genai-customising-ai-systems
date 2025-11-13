@@ -21,15 +21,6 @@ services:
       - ./attendance_id:/app/sync/attendance_id
     tty: true
     stdin_open: true
-  chat_client:
-    image: "ghcr.io/skiller-whale/bedrock-chat-client:v0.1.5"
-    volumes:
-      - ./exercises/logging:/app/logging
-    ports:
-      - 1001:3000
-    environment:
-      ATTENDANCE_ID: "${SW_ATTENDANCE_ID}"
-      NEXT_TELEMETRY_DISABLED: 1
   continue_session_sync_filter:
     image: "ghcr.io/skiller-whale/continue-session-sync-filter:0.0.2"
     volumes:
