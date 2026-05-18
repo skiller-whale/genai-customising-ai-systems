@@ -1,11 +1,11 @@
 from pathlib import Path
 from time import perf_counter
 from langchain_core.vectorstores import InMemoryVectorStore
-from langchain.embeddings import CacheBackedEmbeddings
+from langchain_classic.embeddings import CacheBackedEmbeddings
 from langchain_aws.embeddings import BedrockEmbeddings
 from langchain_community.document_loaders import DirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.storage import LocalFileStore
+from langchain_classic.storage import LocalFileStore
 from utils import get_attendance_id
 
 VECTOR_STORE_PATH = '.cache/vector_store.p'
