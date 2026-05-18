@@ -1,9 +1,9 @@
 from langchain_aws.chat_models.bedrock import ChatBedrock
 from langchain_core.prompts.chat import ChatPromptTemplate
 from langchain_core.vectorstores import InMemoryVectorStore
-from langchain.embeddings import CacheBackedEmbeddings
+from langchain_classic.embeddings import CacheBackedEmbeddings
 from langchain_aws.embeddings import BedrockEmbeddings
-from langchain.storage import LocalFileStore
+from langchain_classic.storage import LocalFileStore
 from utils import get_attendance_id
 from pathlib import Path
 
