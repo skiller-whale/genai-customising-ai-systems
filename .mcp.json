@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "customer-data": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "/home/learner/genai-customising-ai-systems-staging/exercises/mcp/customer_mcp_server.py"
+      ],
+      "env": {}
+    }
+  }
+}

@@ -17,8 +17,8 @@ from data.customers import (
 #  * Define `tool_get_customer_list() -> list[dict]` to return the list of customers.`
 #  * NOTE: Make sure both tools have a description (this is a Bedrock requirement).
 #
-#  * Once done, open Continue and make sure the MCP server starts correctly.
-#  * Then, ask the LLM in Agent mode questions about customers, e.g.:
+#  * Once done, open Claude Code and make sure the MCP server starts correctly.
+#  * Then, ask Claude questions about customers, e.g.:
 #      - How many high-value customers (spending more than 1 million a year) are there?
 #      - Which customers have offices in Europe?
 #      - Which customers have offices in the US and spend more than 2 million a year?
