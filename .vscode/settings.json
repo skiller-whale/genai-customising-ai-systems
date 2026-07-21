@@ -1,0 +1,19 @@
+{
+  "claudeCode.environmentVariables": [
+    {"name": "AWS_REGION", "value": "eu-west-1"},
+    {"name": "ANTHROPIC_MODEL", "value": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0"},
+    {"name": "ANTHROPIC_DEFAULT_SONNET_MODEL", "value": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0"},
+    {"name": "ANTHROPIC_DEFAULT_HAIKU_MODEL", "value": "eu.anthropic.claude-haiku-4-5-20251001-v1:0"},
+    {"name": "BEDROCK_MODEL", "value": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0"},
+    {"name": "ANTHROPIC_BEDROCK_BASE_URL", "value": "https://bedrock-runtime.aws-proxy.skillerwhale.com"},
+    {"name": "CLAUDE_CODE_USE_BEDROCK", "value": "1"},
+    {"name": "AWS_ACCESS_KEY_ID", "value": "ATTENDANCE_ID_IF_YOU_SEE_THIS_SOMETHING_BROKE"},
+    {"name": "AWS_SECRET_ACCESS_KEY", "value": "unused"}
+  ],
+  "claudeCode.selectedModel": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "claudeCode.disableLoginPrompt": true,
+  "claudeCode.hideOnboarding": true,
+  "claudeCode.preferredLocation": "sidebar",
+  "files.autoSave": "off",
+  "claudeCode.autosave": false
+}

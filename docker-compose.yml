@@ -15,8 +15,8 @@ services:
       - ./attendance_id:/app/sync/attendance_id
     tty: true
     stdin_open: true
-  continue_session_sync_filter:
-    image: "ghcr.io/skiller-whale/continue-session-sync-filter:0.0.2"
+  claude_session_sync_filter:
+    image: "ghcr.io/skiller-whale/claude-session-sync-filter:0.0.2"
     volumes:
-      - /home/learner/.continue/sessions:/sessions_raw
-      - /home/learner/genai-customising-ai-systems/.chat_history:/sessions_filtered
+      - /home/learner/.claude/projects:/sessions_raw:ro
+      - ./.chat_history:/sessions_filtered

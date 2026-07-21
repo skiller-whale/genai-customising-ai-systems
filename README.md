@@ -6,6 +6,6 @@ During each session you'll be asked to write and edit code in some of the files.
 
 ## Running Exercises
 
-Whilst you can download these exercises locally for reference, they are intended to be run using the hosted environment provided by Skiller Whale during sessions.
+Whilst you can download these exercises locally for reference, they are intended to be run using the hosted learner environment provided by Skiller Whale during sessions.
 
 This makes managing API credentials much easier, and means you don't need to install or set up anything locally.
