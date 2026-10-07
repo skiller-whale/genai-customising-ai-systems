@@ -40,9 +40,8 @@ model = ChatBedrockConverse(
 #   * Implement it using `load_customer_office_locations`.
 #   * Add the new tool to the agent's `tools` list.
 #
-#   * Try asking questions about customers' offices, for example:
-#       - "Which customers have offices in Europe?"
-#       - "Which customers have offices in the US and spend more than 2 million a year?"
+#   * Try asking this question about customers' offices:
+#       - "Which countries do high-value customers (spending more than 1 million a year) have offices in?"
 #
 
 # This is the query we want our agent to be able to answer.
